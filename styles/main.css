@@ -134,7 +134,7 @@ body {
 /* Products Grid */
 .products-grid {
   display: grid;
-<<<<<<< HEAD
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
@@ -151,7 +151,7 @@ body {
 
 .product-card:hover {
   transform: translateY(-5px);
-=======
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
   padding: 2rem;
@@ -303,7 +303,6 @@ body {
   .product-image {
     height: 220px;
   }
->>>>>>> ed02499 (Initial commit)
 }
 
 /* Contact Form */
@@ -710,10 +709,8 @@ body {
   text-align: center;
   position: relative;
   padding-bottom: 1rem;
-<<<<<<< HEAD
-=======
-  color:white !important;
->>>>>>> ed02499 (Initial commit)
+
+  color: white !important;
 }
 
 .product-category::after {
@@ -722,12 +719,11 @@ body {
   bottom: 0;
   right: 50%;
   transform: translateX(50%);
-<<<<<<< HEAD
+
   width: 60px;
-=======
+
   width: 30px;
-  
->>>>>>> ed02499 (Initial commit)
+
   height: 3px;
   background-color: var(--accent-color);
 }
@@ -807,28 +803,27 @@ body {
 .hero-features {
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
+
   gap: 2rem;
   margin: 2rem 0;
-=======
+
   gap: 2.5rem;
   margin: 2rem 0;
   flex-wrap: wrap;
   padding: 0 1rem;
->>>>>>> ed02499 (Initial commit)
 }
 
 .feature-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
+
   gap: 0.5rem;
 }
 
 .feature-icon {
   font-size: 2rem;
-=======
+
   gap: 0.8rem;
   background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem 2rem;
@@ -867,32 +862,29 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
   text-align: center;
->>>>>>> ed02499 (Initial commit)
 }
 
 /* Vision Mission Section */
 .vision-mission-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-<<<<<<< HEAD
+
   gap: 2rem;
   margin: 2rem 0;
-=======
+
   gap: 2.5rem;
   margin: 2.5rem 0;
   padding: 0 1rem;
->>>>>>> ed02499 (Initial commit)
 }
 
 .vision-card,
 .mission-card {
-<<<<<<< HEAD
   background-color: var(--light-blue);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s ease;
-=======
+
   background: var(--white);
   padding: 2.5rem;
   border-radius: 20px;
@@ -919,25 +911,22 @@ body {
 .vision-card:hover::before,
 .mission-card:hover::before {
   transform: scaleX(1);
->>>>>>> ed02499 (Initial commit)
 }
 
 .vision-card:hover,
 .mission-card:hover {
-<<<<<<< HEAD
   transform: translateY(-5px);
-=======
+
   transform: translateY(-10px);
   box-shadow: 0 25px 45px rgba(0, 169, 157, 0.15);
->>>>>>> ed02499 (Initial commit)
 }
 
 .vision-card h2,
 .mission-card h2 {
   color: var(--primary-color);
-<<<<<<< HEAD
+
   margin-bottom: 1rem;
-=======
+
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   position: relative;
@@ -962,15 +951,13 @@ body {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-top: 1rem;
->>>>>>> ed02499 (Initial commit)
 }
 
 @media (max-width: 768px) {
   .hero-features {
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-=======
+
     gap: 1.5rem;
   }
 
@@ -986,7 +973,6 @@ body {
   .vision-card h2,
   .mission-card h2 {
     font-size: 1.5rem;
->>>>>>> ed02499 (Initial commit)
   }
 }
 
@@ -1443,146 +1429,61 @@ body {
 
 /* Vision Mission Section */
 .vision-mission {
-<<<<<<< HEAD
-  padding: 6rem 2rem;
+  padding: 6rem 2rem; /* تباعد داخلي */
   background-color: var(--light-blue);
-}
-
-.vision-mission-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.vm-card {
-  background: var(--white);
-  padding: 3rem 2rem;
-  border-radius: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-=======
-  padding: 6rem 0;
-  background-color: var(--white);
 }
 
 .vm-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* تصميم شبكي متجاوب */
+  gap: 2rem; /* تباعد بين العناصر */
+  max-width: 1200px; /* عرض أقصى */
+  margin: 0 auto; /* توسيط */
 }
 
 .vm-card {
-  background-color: var(--white);
-  padding: 3rem 2rem;
-  border-radius: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.vm-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-  transform: scaleX(0);
-  transition: transform 0.4s ease;
-}
-
-.vm-card:hover::before {
-  transform: scaleX(1);
->>>>>>> ed02499 (Initial commit)
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .vm-card:hover {
-  transform: translateY(-10px);
-<<<<<<< HEAD
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .vm-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-=======
-  box-shadow: 0 20px 30px rgba(0, 169, 157, 0.1);
-}
-
-.vm-icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vm-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
->>>>>>> ed02499 (Initial commit)
+  font-size: 3rem; /* حجم الأيقونة */
+  margin-bottom: 1rem; /* تباعد أسفل الأيقونة */
 }
 
 .vm-card h2 {
   color: var(--primary-color);
-<<<<<<< HEAD
-  margin-bottom: 1.5rem;
-=======
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  font-family: "Cairo", sans-serif;
-  position: relative;
->>>>>>> ed02499 (Initial commit)
+  font-size: 1.5rem; /* حجم العنوان */
+  margin-bottom: 0.5rem; /* تباعد أسفل العنوان */
 }
 
 .vm-card p {
   color: var(--text-color);
-<<<<<<< HEAD
-  line-height: 1.8;
-=======
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
+  font-size: 1rem; /* حجم النص */
+  line-height: 1.5; /* ارتفاع السطر */
 }
 
 /* تحسينات للتجاوب */
-@media (max-width: 992px) {
-  .vm-cards {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 2rem;
-  }
-}
-
 @media (max-width: 768px) {
-  .vm-cards {
-    grid-template-columns: 1fr;
-    padding: 0 1.5rem;
-  }
-
-  .vm-card {
-    padding: 2rem 1.5rem;
-  }
-
   .vm-card h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* تقليل حجم العنوان على الشاشات الصغيرة */
   }
 
-  .vm-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1.5rem;
+  .vm-card p {
+    font-size: 0.9rem; /* تقليل حجم النص على الشاشات الصغيرة */
   }
->>>>>>> ed02499 (Initial commit)
 }
 
 /* Timeline Section */
@@ -1634,10 +1535,9 @@ body {
 .products-hero {
   background: linear-gradient(135deg, var(--primary-color) 0%, #006d64 100%);
   min-height: 400px;
-<<<<<<< HEAD
-=======
+
   color: white !important;
->>>>>>> ed02499 (Initial commit)
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1757,7 +1657,6 @@ body {
   transition: transform 0.6s ease;
 }
 
-<<<<<<< HEAD
 .product-overlay {
   position: absolute;
   top: 1rem;
@@ -1770,11 +1669,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 169, 157, 0.2);
 }
 
-=======
-.product-overlay{
+.product-overlay {
   color: white !important;
 }
->>>>>>> ed02499 (Initial commit)
+
 .product-info {
   padding: 2rem;
   background: linear-gradient(to bottom, transparent, var(--white) 10%);
@@ -1883,7 +1781,7 @@ body {
 
 @keyframes moveBackground {
   from {
-    background-position: 0 0;
+    background-position: 0% 0%;
   }
   to {
     background-position: 100% 100%;
@@ -1986,18 +1884,6 @@ body {
   flex-wrap: wrap;
   position: relative;
   z-index: 3;
-}
-
-.stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2.5rem;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  min-width: 220px;
-  animation: fadeInUp 1.2s ease 0.4s;
-  animation-fill-mode: both;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
 }
 
 .stat-card:hover {
@@ -2875,8 +2761,8 @@ body {
 }
 
 .contact-icon {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   color: var(--primary-color);
   transition: transform 0.4s ease;
 }
@@ -3118,8 +3004,6 @@ body {
     padding: 2rem 1.5rem;
   }
 }
-<<<<<<< HEAD
-=======
 
 /* تحديث تنسيقات مناطق التوزيع */
 .distribution-regions {
@@ -3385,61 +3269,33 @@ body {
   }
 }
 
-/* تنسيقات إحصائيات الجودة */
+/* تحسينات لقسم إحصائيات الجودة */
 .quality-stats {
-  padding: 6rem 0;
+  padding: 6rem 2rem; /* تباعد داخلي */
   background: linear-gradient(135deg, var(--primary-color) 0%, #006d64 100%);
   position: relative;
   overflow: hidden;
 }
 
-.quality-stats::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 10%
-    ),
-    radial-gradient(
-      circle at 80% 70%,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 10%
-    );
-  animation: floatingBubbles 20s linear infinite;
-}
-
-.quality-stats .section-title {
-  color: var(--white);
-  margin-bottom: 3rem;
-  position: relative;
-  z-index: 1;
-}
-
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  z-index: 1;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* تصميم شبكي متجاوب */
+  gap: 2rem; /* تباعد بين العناصر */
+  max-width: 1200px; /* عرض أقصى */
+  margin: 0 auto; /* توسيط */
+  padding: 0 2rem; /* تباعد داخلي */
 }
 
 .stat-card {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 2.5rem 2rem;
+  padding: 2.5rem;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3452,77 +3308,34 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.stat-icon {
-  font-size: 3rem;
-  color: var(--white);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease;
-}
-
-.stat-card:hover .stat-icon {
-  transform: scale(1.2) rotate(10deg);
-}
-
-.stat-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.stat-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--white);
-  font-family: "Cairo", sans-serif;
-  line-height: 1;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.stat-label {
-  font-size: 1.2rem;
-  color: var(--white);
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-@keyframes floatingBubbles {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
 /* تحسينات للتجاوب */
 @media (max-width: 1200px) {
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr); /* عمودين على الشاشات الأصغر */
+    gap: 2rem; /* تباعد بين العناصر */
   }
 }
 
 @media (max-width: 768px) {
   .quality-stats {
-    padding: 4rem 0;
+    padding: 4rem 1rem; /* تقليل التباعد الداخلي */
   }
 
   .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1.5rem;
+    grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
+    gap: 1.5rem; /* تباعد بين العناصر */
+    padding: 0 1.5rem; /* تباعد داخلي */
   }
 
   .stat-card {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem; /* تقليل التباعد الداخلي للبطاقات */
   }
 
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* تقليل حجم الرقم */
   }
 
   .stat-label {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* تقليل حجم النص */
   }
 }
->>>>>>> ed02499 (Initial commit)
