@@ -16,7 +16,12 @@
         <div class="logo">
           <h1>روابي بلادنا</h1>
         </div>
-        <div class="nav-links">
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
           <a href="index.html">الرئيسية</a>
           <a href="about.html">عن المصنع</a>
           <a href="products.html">المنتجات</a>
@@ -42,13 +47,7 @@
         <div class="container">
           <h2 class="section-title">إحصائيات الجودة</h2>
           <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-icon">⭐</div>
-              <div class="stat-content">
-                <div class="stat-number" data-count="15">15+</div>
-                <div class="stat-label">سنوات خبرة</div>
-              </div>
-            </div>
+      
             <div class="stat-card">
               <div class="stat-icon">🏆</div>
               <div class="stat-content">
@@ -63,13 +62,7 @@
                 <div class="stat-label">فحص يومي</div>
               </div>
             </div>
-            <div class="stat-card">
-              <div class="stat-icon">📋</div>
-              <div class="stat-content">
-                <div class="stat-number" data-count="25">25+</div>
-                <div class="stat-label">شهادة معتمدة</div>
-              </div>
-            </div>
+    
           </div>
         </div>
       </section>
@@ -82,7 +75,7 @@
             <!-- الرؤية -->
             <div class="vm-card">
               <div class="vm-icon">
-                <img src="images/target-icon.svg" alt="رؤيتنا" />
+                <i class="fas fa-bullseye"></i>
               </div>
               <h2>رؤيتنا</h2>
               <p>
@@ -94,7 +87,7 @@
             <!-- الرسالة -->
             <div class="vm-card">
               <div class="vm-icon">
-                <img src="images/mission-icon.svg" alt="رسالتنا" />
+                <i class="fas fa-paper-plane"></i>
               </div>
               <h2>رسالتنا</h2>
               <p>
@@ -106,7 +99,7 @@
             <!-- القيم -->
             <div class="vm-card">
               <div class="vm-icon">
-                <img src="images/values-icon.svg" alt="قيمنا" />
+                <i class="fas fa-thumbs-up"></i>
               </div>
               <h2>قيمنا</h2>
               <p>الجودة، الابتكار، الاستدامة، رضا العملاء</p>
@@ -261,5 +254,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("navToggle")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.getElementById("navLinks").classList.toggle("active");
+        });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", function (e) {
+        const navToggle = document.getElementById("navToggle");
+        const navLinks = document.getElementById("navLinks");
+        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+          navToggle.classList.remove("active");
+          navLinks.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>

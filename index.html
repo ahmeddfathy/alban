@@ -142,5 +142,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.getElementById('navToggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('active');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+          navToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+    </script>
   </body>
 </html>

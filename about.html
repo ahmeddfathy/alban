@@ -17,7 +17,12 @@
         <div class="logo">
           <h1>روابي بلادنا</h1>
         </div>
-        <div class="nav-links">
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
           <a href="index.html">الرئيسية</a>
           <a href="about.html" class="active">عن المصنع</a>
           <a href="products.html">المنتجات</a>
@@ -126,26 +131,24 @@
       </section>
 
       <section class="timeline-section">
-        <div class="container">
-          <h2 class="section-title">مسيرة نجاحنا</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3>2023</h3>
-                <p>تأسيس المصنع وبداية الإنتاج</p>
-              </div>
+        <h2 class="section-title">مسيرة نجاحنا</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2023</h3>
+              <p>تأسيس المصنع وبداية الإنتاج</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3>2024</h3>
-                <p>التوسع في خطوط الإنتاج</p>
-              </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2024</h3>
+              <p>التوسع في خطوط الإنتاج</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <h3>2025</h3>
-                <p>التوسع في أسواق المنطقة</p>
-              </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2025</h3>
+              <p>التوسع في أسواق المنطقة</p>
             </div>
           </div>
         </div>
@@ -171,5 +174,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.getElementById('navToggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('active');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+          navToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+    </script>
   </body>
 </html>
