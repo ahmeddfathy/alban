@@ -4,158 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>منتجاتنا - روابي بلادنا</title>
-
-    <link rel="stylesheet" href="styles/main.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/products.css" />
+    <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <h1>روابي بلادنا</h1>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">الرئيسية</a>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html" class="active">المنتجات</a>
-          <a href="distribution.html">خطة التوزيع</a>
-          <a href="quality.html">الجودة والاستدامة</a>
-          <a href="target-groups.html">الفئات المستهدفة</a>
-          <a href="contact.html">اتصل بنا</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">روابي بلادنا</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن المصنع</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="products.html">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="distribution.html">خطة التوزيع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quality.html">الجودة والاستدامة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="target-groups.html"
+                  >الفئات المستهدفة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="products-hero">
-        <div class="products-hero-content">
-          <h1>منتجاتنا</h1>
-          <p>نقدم لكم مجموعة متنوعة من منتجات الألبان والأجبان عالية الجودة</p>
+        <div class="container">
+          <div class="products-hero-content text-center">
+            <h1 class="mb-4">منتجاتنا المميزة</h1>
+            <p class="mb-5">
+              نقدم أجود أنواع الألبان والأجبان المصنعة من أفضل المكونات الطبيعية
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="products-categories">
+      <section class="category-filter">
         <div class="container">
-          <div class="category-tabs">
-            <button class="tab-btn active" data-category="all">
+          <div class="filter-buttons">
+            <button class="btn btn-outline-primary active" data-category="all">
               جميع المنتجات
             </button>
-            <button class="tab-btn" data-category="cheese">الأجبان</button>
-            <button class="tab-btn" data-category="dairy">الألبان</button>
-            <button class="tab-btn" data-category="chocolate">
-              كريمة الشوكولاتة
+            <button class="btn btn-outline-primary" data-category="cheese">
+              الأجبان
             </button>
-          </div>
-
-          <div class="products-grid">
-            <!-- الأجبان -->
-            <div class="product-card" data-category="cheese">
-              <div class="product-image">
-                <img
-                  src="https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1182384-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMTUzMjl8aW1hZ2UvanBlZ3xoMDUvaGExLzEyNjY3MzM0NzIxNTY2LzExODIzODQtMDEuanBnXzEyMDBXeDEyMDBIfGE2NmQ3MWU5ZTE3OTgzMGVhZDZkNTk4ZDcyODI3M2JlYmUwZDgyZGE0NDcwZTExYzZjNmY3ZDZkMjA1MzY4MGU"
-                  alt="جبنة بيضاء"
-                />
-                <div class="product-overlay">
-                  <span class="product-category">الأجبان</span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h3>جبنة بيضاء</h3>
-                <p>جبنة طازجة بنكهة مميزة</p>
-                <div class="product-features">
-                  <span>✓ طازجة</span>
-                  <span>✓ غنية بالكالسيوم</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card" data-category="cheese">
-              <div class="product-image">
-                <img
-                  src="https://th.bing.com/th/id/R.fe984ba112125493929692624c33cf51?rik=kCJeSOMSUy%2bpyw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f34600000%2fYellow-Cheese-colors-34605317-500-402.jpg&ehk=Vby6TjHW7ajM5AILQDpoB2%2bRFAAohWWPwh63l03A1zE%3d&risl=&pid=ImgRaw&r=0"
-                  alt="جبنة قشقوان"
-                />
-                <div class="product-overlay">
-                  <span class="product-category">الأجبان</span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h3>جبنة قشقوان</h3>
-                <p>جبنة صفراء بنكهة مميزة</p>
-                <div class="product-features">
-                  <span>✓ نكهة غنية</span>
-                  <span>✓ مثالية للشطائر</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- الألبان -->
-            <div class="product-card" data-category="dairy">
-              <div class="product-image">
-                <img
-                  src="https://th.bing.com/th/id/OIP.LFTPXu22OFTWq1at2xievgHaE8?rs=1&pid=ImgDetMain"
-                  alt="لبنة طازجة"
-                />
-                <div class="product-overlay">
-                  <span class="product-category">الألبان</span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h3>لبنة كريمية</h3>
-                <p>لبنة طازجة بنكهات متعددة</p>
-                <div class="product-features">
-                  <span>✓ كريمية</span>
-                  <span>✓ قليلة الدسم</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- كريمة الشوكولاتة -->
-            <div class="product-card" data-category="chocolate">
-              <div class="product-image">
-                <img
-                  src="https://th.bing.com/th/id/OIP.v4q1ZY43oIS0eFLEMNhRggHaGg?rs=1&pid=ImgDetMain"
-                  alt="كريمة شوكولاتة"
-                />
-                <div class="product-overlay">
-                  <span class="product-category">كريمة الشوكولاتة</span>
-                </div>
-              </div>
-              <div class="product-info">
-                <h3>كريمة شوكولاتة بالبندق</h3>
-                <p>كريمة غنية بنكهة الشوكولاتة والبندق</p>
-                <div class="product-features">
-                  <span>✓ طبيعية</span>
-                  <span>✓ غنية بالنكهة</span>
-                </div>
-              </div>
-            </div>
+            <button class="btn btn-outline-primary" data-category="dairy">
+              الألبان
+            </button>
+          
           </div>
         </div>
       </section>
 
-      <section class="product-features">
+      <section class="products-section py-5">
         <div class="container">
-          <h2>لماذا تختار منتجاتنا؟</h2>
-          <div class="features-grid">
-            <div class="feature-item">
-              <div class="feature-icon">🌿</div>
-              <h3>مكونات طبيعية</h3>
-              <p>نستخدم أجود المكونات الطبيعية</p>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4" data-category="cheese">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1624806992066-5ffcf7ca186b?ixlib=rb-4.0.3"
+                    alt="جبنة بيضاء"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>جبنة بيضاء طازجة</h3>
+                  <p>جبنة طازجة بنكهة مميزة وغنية بالكالسيوم</p>
+                  <div class="product-features">
+                    <span class="badge badge-success">طازجة</span>
+                    <span class="badge badge-success">غنية بالكالسيوم</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="feature-item">
-              <div class="feature-icon">🥛</div>
-              <h3>طازجة يومياً</h3>
-              <p>منتجات طازجة يتم إنتاجها يومياً</p>
+
+            <div class="col-md-6 col-lg-4 mb-4" data-category="cheese">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3"
+                    alt="جبنة قشقوان"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>جبنة قشقوان</h3>
+                  <p>جبنة صفراء بنكهة مميزة ومذاق شهي</p>
+                  <div class="product-features">
+                    <span class="badge badge-success">نكهة غنية</span>
+                    <span class="badge badge-success">مثالية للشطائر</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="feature-item">
-              <div class="feature-icon">⭐</div>
-              <h3>جودة عالية</h3>
-              <p>نلتزم بأعلى معايير الجودة</p>
+
+            <div class="col-md-6 col-lg-4 mb-4" data-category="dairy">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1559561853-08451507cbe7?ixlib=rb-4.0.3"
+                    alt="لبنة كريمية"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>لبنة كريمية</h3>
+                  <p>لبنة طازجة بنكهات متعددة</p>
+                  <div class="product-features">
+                    <span class="badge badge-success">كريمية</span>
+                    <span class="badge badge-success">قليلة الدسم</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4" data-category="dairy">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3"
+                    alt="حليب طازج"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>حليب طازج</h3>
+                  <p>حليب طازج غني بالكالسيوم</p>
+                  <div class="product-features">
+                    <span class="badge badge-success">طازج</span>
+                    <span class="badge badge-success">غني بالكالسيوم</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4" data-category="dairy">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-4.0.3"
+                    alt="زبادي"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>زبادي طبيعي</h3>
+                  <p>زبادي طازج غني بالبروبيوتيك</p>
+                  <div class="product-features">
+                    <span class="badge badge-success">طبيعي</span>
+                    <span class="badge badge-success">غني بالبروبيوتيك</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section py-5 bg-light">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">مميزات منتجاتنا</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="feature-card text-center">
+                <div class="feature-icon">🌿</div>
+                <h3>مكونات طبيعية</h3>
+                <p>نستخدم أجود المكونات الطبيعية في منتجاتنا</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="feature-card text-center">
+                <div class="feature-icon">🥛</div>
+                <h3>طازجة يومياً</h3>
+                <p>منتجات طازجة يتم إنتاجها يومياً</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="feature-card text-center">
+                <div class="feature-icon">⭐</div>
+                <h3>جودة عالية</h3>
+                <p>نلتزم بأعلى معايير الجودة العالمية</p>
+              </div>
             </div>
           </div>
         </div>
@@ -163,35 +225,48 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>روابي بلادنا</h2>
-          <p>نكهة الطبيعة في كل منتجاتنا</p>
-        </div>
-        <div class="footer-links">
-          <h3>روابط سريعة</h3>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="contact.html">اتصل بنا</a>
-        </div>
-        <div class="footer-contact">
-          <h3>تواصل معنا</h3>
-          <p>هاتف: 0096656518XXXX</p>
-          <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-brand">
+              <h2>روابي بلادنا</h2>
+              <p>نكهة الطبيعة في كل منتجاتنا</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-links">
+              <h3>روابط سريعة</h3>
+              <ul class="list-unstyled">
+                <li><a href="about.html">عن المصنع</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-contact">
+              <h3>تواصل معنا</h3>
+              <p>هاتف: 0096656518XXXX</p>
+              <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-      // تفعيل التصفية حسب الفئة
-      const tabBtns = document.querySelectorAll(".tab-btn");
-      const products = document.querySelectorAll(".product-card");
+      const filterBtns = document.querySelectorAll(".btn-outline-primary");
+      const products = document.querySelectorAll(
+        ".products-section [data-category]"
+      );
 
-      tabBtns.forEach((btn) => {
+      filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
-          // إزالة الكلاس active من جميع الأزرار
-          tabBtns.forEach((b) => b.classList.remove("active"));
-          // إضافة الكلاس active للزر المختار
+          filterBtns.forEach((b) => b.classList.remove("active"));
+
           btn.classList.add("active");
 
           const category = btn.dataset.category;
@@ -199,8 +274,10 @@
           products.forEach((product) => {
             if (category === "all" || product.dataset.category === category) {
               product.style.display = "block";
+              product.classList.add("show-product");
             } else {
               product.style.display = "none";
+              product.classList.remove("show-product");
             }
           });
         });

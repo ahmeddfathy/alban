@@ -4,37 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الجودة والاستدامة - روابي بلادنا</title>
-    <link rel="stylesheet" href="styles/main.css" />
+
+    <link rel="stylesheet" href="styles/quality.css" />
+    <link rel="stylesheet" href="styles/base.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <h1>روابي بلادنا</h1>
-        </div>
-        <div class="nav-toggle" id="navToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="nav-links" id="navLinks">
-          <a href="index.html">الرئيسية</a>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="distribution.html">خطة التوزيع</a>
-          <a href="quality.html" class="active">الجودة والاستدامة</a>
-          <a href="target-groups.html">الفئات المستهدفة</a>
-          <a href="contact.html">اتصل بنا</a>
+      <nav class="nav navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div class="logo">
+            <h1>روابي بلادنا</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navLinks"
+            aria-controls="navLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن المصنع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="distribution.html">خطة التوزيع</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="quality.html"
+                  >الجودة والاستدامة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="target-groups.html"
+                  >الفئات المستهدفة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <!-- قسم البطل -->
       <section class="quality-hero">
         <div class="quality-hero-content">
           <h1>الجودة والاستدامة</h1>
@@ -42,193 +75,212 @@
         </div>
       </section>
 
-      <!-- إحصائيات الجودة -->
       <section class="quality-stats">
         <div class="container">
           <h2 class="section-title">إحصائيات الجودة</h2>
-          <div class="stats-grid">
-      
-            <div class="stat-card">
-              <div class="stat-icon">🏆</div>
-              <div class="stat-content">
-                <div class="stat-number" data-count="100">100%</div>
-                <div class="stat-label">مطابقة للمعايير</div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="stat-card shadow-sm">
+                <div class="stat-icon bg-light">🏆</div>
+                <div class="stat-content">
+                  <div class="stat-number" data-count="100">100%</div>
+                  <div class="stat-label">مطابقة للمعايير</div>
+                </div>
               </div>
             </div>
-            <div class="stat-card">
-              <div class="stat-icon">🔬</div>
-              <div class="stat-content">
-                <div class="stat-number" data-count="50">50+</div>
-                <div class="stat-label">فحص يومي</div>
+            <div class="col-md-6">
+              <div class="stat-card shadow-sm">
+                <div class="stat-icon bg-light">🔬</div>
+                <div class="stat-content">
+                  <div class="stat-number" data-count="50">50+</div>
+                  <div class="stat-label">فحص يومي</div>
+                </div>
               </div>
             </div>
-    
           </div>
         </div>
       </section>
 
-      <!-- تحديث قسم الرؤية والرسالة والقيم -->
+      <!-- أقسام أخرى -->
       <section class="vision-mission">
         <div class="container">
           <h2 class="section-title">رؤيتنا ورسالتنا</h2>
-          <div class="vm-cards">
-            <!-- الرؤية -->
-            <div class="vm-card">
-              <div class="vm-icon">
-                <i class="fas fa-bullseye"></i>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="vm-card shadow-sm">
+                <div class="vm-icon bg-light">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h2>رؤيتنا</h2>
+                <p>
+                  أن نكون الخيار الأول للمستهلك في مجال منتجات الألبان في
+                  المملكة العربية السعودية
+                </p>
               </div>
-              <h2>رؤيتنا</h2>
-              <p>
-                أن نكون الخيار الأول للمستهلك في مجال منتجات الألبان في المملكة
-                العربية السعودية
-              </p>
             </div>
-
-            <!-- الرسالة -->
-            <div class="vm-card">
-              <div class="vm-icon">
-                <i class="fas fa-paper-plane"></i>
+            <div class="col-md-4">
+              <div class="vm-card shadow-sm">
+                <div class="vm-icon bg-light">
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+                <h2>رسالتنا</h2>
+                <p>
+                  تقديم منتجات عالية الجودة تلبي تطلعات عملائنا وتساهم في تحقيق
+                  الأمن الغذائي
+                </p>
               </div>
-              <h2>رسالتنا</h2>
-              <p>
-                تقديم منتجات عالية الجودة تلبي تطلعات عملائنا وتساهم في تحقيق
-                الأمن الغذائي
-              </p>
             </div>
-
-            <!-- القيم -->
-            <div class="vm-card">
-              <div class="vm-icon">
-                <i class="fas fa-thumbs-up"></i>
+            <div class="col-md-4">
+              <div class="vm-card shadow-sm">
+                <div class="vm-icon bg-light">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+                <h2>قيمنا</h2>
+                <p>الجودة، الابتكار، الاستدامة، رضا العملاء</p>
               </div>
-              <h2>قيمنا</h2>
-              <p>الجودة، الابتكار، الاستدامة، رضا العملاء</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- إضافة قسم شهاداتنا المعتمدة -->
       <section class="certificates-section">
         <div class="container">
           <h2 class="section-title">شهاداتنا المعتمدة</h2>
-          <div class="certificates-grid">
-            <div class="certificate-card">
-              <div class="certificate-icon">⚡</div>
-              <h3 class="certificate-title">ISO 22000</h3>
-              <p class="certificate-subtitle">نظام إدارة سلامة الغذاء</p>
-              <ul class="certificate-list">
-                <li>سلامة الغذاء</li>
-                <li>التتبع والمراقبة</li>
-                <li>إدارة المخاطر</li>
-              </ul>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="certificate-card shadow-sm">
+                <div class="certificate-icon bg-light">⚡</div>
+                <h3 class="certificate-title">ISO 22000</h3>
+                <p class="certificate-subtitle">نظام إدارة سلامة الغذاء</p>
+                <ul class="certificate-list">
+                  <li>سلامة الغذاء</li>
+                  <li>التتبع والمراقبة</li>
+                  <li>إدارة المخاطر</li>
+                </ul>
+              </div>
             </div>
-
-            <div class="certificate-card">
-              <div class="certificate-icon">🌓</div>
-              <h3 class="certificate-title">HACCP</h3>
-              <p class="certificate-subtitle">نظام تحليل المخاطر</p>
-              <ul class="certificate-list">
-                <li>تحليل المخاطر</li>
-                <li>نقاط التحكم الحرجة</li>
-                <li>سلامة المنتج</li>
-              </ul>
+            <div class="col-md-3">
+              <div class="certificate-card shadow-sm">
+                <div class="certificate-icon bg-light">🌓</div>
+                <h3 class="certificate-title">HACCP</h3>
+                <p class="certificate-subtitle">نظام تحليل المخاطر</p>
+                <ul class="certificate-list">
+                  <li>تحليل المخاطر</li>
+                  <li>نقاط التحكم الحرجة</li>
+                  <li>سلامة المنتج</li>
+                </ul>
+              </div>
             </div>
-
-            <div class="certificate-card">
-              <div class="certificate-icon">🌱</div>
-              <h3 class="certificate-title">ISO 14001</h3>
-              <p class="certificate-subtitle">نظام الإدارة البيئية</p>
-              <ul class="certificate-list">
-                <li>حماية البيئة</li>
-                <li>إدارة الموارد</li>
-                <li>التنمية المستدامة</li>
-              </ul>
+            <div class="col-md-3">
+              <div class="certificate-card shadow-sm">
+                <div class="certificate-icon bg-light">🌱</div>
+                <h3 class="certificate-title">ISO 14001</h3>
+                <p class="certificate-subtitle">نظام الإدارة البيئية</p>
+                <ul class="certificate-list">
+                  <li>حماية البيئة</li>
+                  <li>إدارة الموارد</li>
+                  <li>التنمية المستدامة</li>
+                </ul>
+              </div>
             </div>
-
-            <div class="certificate-card">
-              <div class="certificate-icon">☀️</div>
-              <h3 class="certificate-title">ISO 9001</h3>
-              <p class="certificate-subtitle">نظام إدارة الجودة</p>
-              <ul class="certificate-list">
-                <li>إدارة الجودة الشاملة</li>
-                <li>التحسين المستمر</li>
-                <li>رضا العملاء</li>
-              </ul>
+            <div class="col-md-3">
+              <div class="certificate-card shadow-sm">
+                <div class="certificate-icon bg-light">☀️</div>
+                <h3 class="certificate-title">ISO 9001</h3>
+                <p class="certificate-subtitle">نظام إدارة الجودة</p>
+                <ul class="certificate-list">
+                  <li>إدارة الجودة الشاملة</li>
+                  <li>التحسين المستمر</li>
+                  <li>رضا العملاء</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- عملية ضمان الجودة -->
       <section class="quality-process">
         <div class="container">
           <h2 class="section-title">عملية ضمان الجودة</h2>
-          <div class="process-steps">
-            <div class="process-step">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <h3>اختيار المواد الخام</h3>
-                <p>
-                  انتقاء أجود المواد الخام من موردين معتمدين عالمياً وفحصها بدقة
-                </p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h3>اختيار المواد الخام</h3>
+                  <p>
+                    انتقاء أجود المواد الخام من موردين معتمدين عالمياً وفحصها
+                    بدقة
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="process-step">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <h3>الفحص المخبري</h3>
-                <p>إجراء الفحوصات المخبرية الشاملة لضمان جودة وسلامة المنتج</p>
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h3>الفحص المخبري</h3>
+                  <p>
+                    إجراء الفحوصات المخبرية الشاملة لضمان جودة وسلامة المنتج
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="process-step">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <h3>المراقبة المستمرة</h3>
-                <p>متابعة دقيقة لجودة المنتج في جميع مراحل التصنيع والتخزين</p>
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h3>المراقبة المستمرة</h3>
+                  <p>
+                    متابعة دقيقة لجودة المنتج في جميع مراحل التصنيع والتخزين
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="process-step">
-              <div class="step-number">4</div>
-              <div class="step-content">
-                <h3>التعبئة والتغليف</h3>
-                <p>
-                  استخدام أحدث تقنيات التعبئة والتغليف الآمنة والصديقة للبيئة
-                </p>
+            <div class="col-md-3">
+              <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h3>التعبئة والتغليف</h3>
+                  <p>
+                    استخدام أحدث تقنيات التعبئة والتغليف الآمنة والصديقة للبيئة
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- التزامنا بالاستدامة -->
       <section class="sustainability">
         <div class="container">
           <h2 class="section-title">التزامنا بالاستدامة</h2>
-          <div class="sustainability-cards">
-            <div class="sustainability-card">
-              <div class="sustainability-icon">🌿</div>
-              <h3>عبوات صديقة للبيئة</h3>
-              <p>
-                استخدام مواد قابلة للتحلل في التغليف وتقليل النفايات البلاستيكية
-              </p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="sustainability-card shadow-sm">
+                <div class="sustainability-icon bg-light">🌿</div>
+                <h3>عبوات صديقة للبيئة</h3>
+                <p>
+                  استخدام مواد قابلة للتحلل في التغليف وتقليل النفايات
+                  البلاستيكية
+                </p>
+              </div>
             </div>
-
-            <div class="sustainability-card">
-              <div class="sustainability-icon">💧</div>
-              <h3>ترشيد المياه</h3>
-              <p>
-                إعادة تدوير المياه في عمليات التصنيع وتطبيق أنظمة الري الذكي
-              </p>
+            <div class="col-md-4">
+              <div class="sustainability-card shadow-sm">
+                <div class="sustainability-icon bg-light">💧</div>
+                <h3>ترشيد المياه</h3>
+                <p>
+                  إعادة تدوير المياه في عمليات التصنيع وتطبيق أنظمة الري الذكي
+                </p>
+              </div>
             </div>
-
-            <div class="sustainability-card">
-              <div class="sustainability-icon">⚡</div>
-              <h3>كفاءة الطاقة</h3>
-              <p>استخدام الطاقة النظيفة وتطبيق حلول توفير الطاقة في المصنع</p>
+            <div class="col-md-4">
+              <div class="sustainability-card shadow-sm">
+                <div class="sustainability-icon bg-light">⚡</div>
+                <h3>كفاءة الطاقة</h3>
+                <p>استخدام الطاقة النظيفة وتطبيق حلول توفير الطاقة في المصنع</p>
+              </div>
             </div>
           </div>
         </div>
@@ -254,6 +306,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
       document
         .getElementById("navToggle")

@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>روابي بلادنا - منتجات ألبان وأجبان طبيعية</title>
-    <link rel="stylesheet" href="styles/main.css" />
-  
+    <!-- Bootstrap RTL CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap"
       rel="stylesheet"
@@ -13,150 +18,303 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <h1>روابي بلادنا</h1>
-        </div>
-        <div class="nav-links">
-          <a href="index.html" class="active">الرئيسية</a>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="distribution.html">خطة التوزيع</a>
-          <a href="quality.html">الجودة والاستدامة</a>
-          <a href="target-groups.html">الفئات المستهدفة</a>
-          <a href="contact.html">اتصل بنا</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">روابي بلادنا</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن المصنع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="distribution.html">خطة التوزيع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quality.html">الجودة والاستدامة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="target-groups.html"
+                  >الفئات المستهدفة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-content">
-
-          
-
-          <h1 class="hero-title" style="color: white;">روابي بلادنا</h1>
-
-          <p class="hero-subtitle">نكهة الطبيعة في كل منتجاتنا</p>
-          <p class="hero-description">
-            مشروع وطني طموح متخصص في إنتاج منتجات الألبان والأجبان وكريمة
-            الشوكولاتة. نسعى لتحقيق الاكتفاء الذاتي وتعزيز الأمن الغذائي في
-            المملكة من خلال تقديم منتجات عالية الجودة.
-          </p>
-          <div class="hero-buttons">
-            <a href="products.html" class="cta-button primary">تصفح منتجاتنا</a>
-            <a href="about.html" class="cta-button secondary">تعرف علينا</a>
-          </div>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">منتج متنوع</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">جودة عالية</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">24/7</span>
-            <span class="stat-label">خدمة متواصلة</span>
+      <section class="hero py-5">
+        <div class="container">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-8 mx-auto text-center">
+              <h1 class="display-3 fw-bold mb-4">روابي بلادنا</h1>
+              <p class="lead mb-4">نكهة الطبيعة في كل منتجاتنا</p>
+              <p class="mb-5">
+                مشروع وطني طموح متخصص في إنتاج منتجات الألبان والأجبان وكريمة
+                الشوكولاتة. نسعى لتحقيق الاكتفاء الذاتي وتعزيز الأمن الغذائي في
+                المملكة من خلال تقديم منتجات عالية الجودة.
+              </p>
+              <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                <a href="products.html" class="btn btn-primary btn-lg px-4"
+                  >تصفح منتجاتنا</a
+                >
+                <a href="about.html" class="btn btn-outline-light btn-lg px-4"
+                  >تعرف علينا</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="features">
-        <div class="features-grid">
-          <div class="feature-item">
-            <div class="feature-icon">🌿</div>
-            <h3>منتجات طبيعية</h3>
-            <p>نستخدم أجود المكونات الطبيعية في جميع منتجاتنا</p>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">🏭</div>
-            <h3>تصنيع حديث</h3>
-            <p>نستخدم أحدث التقنيات في التصنيع والتعبئة</p>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">🚛</div>
-            <h3>توزيع شامل</h3>
-            <p>شبكة توزيع تغطي جميع مناطق المملكة</p>
+      <section class="stats py-5 bg-light">
+        <div class="container">
+          <div class="row g-4 text-center">
+            <div class="col-md-4">
+              <div class="stat-card p-4">
+                <h2 class="display-4 fw-bold">20+</h2>
+                <p class="lead">منتج متنوع</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card p-4">
+                <h2 class="display-4 fw-bold">100%</h2>
+                <p class="lead">جودة عالية</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card p-4">
+                <h2 class="display-4 fw-bold">24/7</h2>
+                <p class="lead">خدمة متواصلة</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="products-preview">
-        <h2 class="section-title">منتجاتنا المميزة</h2>
-        <div class="products-slider">
-          <div class="product-card featured">
-            <div class="product-image">
-              <img src="images/cheese.jpg" alt="الأجبان" />
+      <section class="about-us py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2 class="display-5 mb-4">من نحن</h2>
+              <p class="lead mb-4">
+                نحن مصنع سعودي رائد في صناعة منتجات الألبان والأجبان
+              </p>
+              <p class="mb-4">
+                في روابي بلادنا، نفخر بتقديم منتجات ألبان عالية الجودة مصنعة
+                بأحدث التقنيات العالمية. نحرص على استخدام أجود أنواع الحليب
+                الطازج من مزارع محلية مختارة بعناية.
+              </p>
+              <div class="row g-4 mt-2">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center">
+                    <div class="feature-icon me-3">✓</div>
+                    <p class="mb-0">خبرة تمتد لسنوات</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center">
+                    <div class="feature-icon me-3">✓</div>
+                    <p class="mb-0">فريق متخصص</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center">
+                    <div class="feature-icon me-3">✓</div>
+                    <p class="mb-0">تقنيات حديثة</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center">
+                    <div class="feature-icon me-3">✓</div>
+                    <p class="mb-0">جودة عالمية</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>الأجبان الطازجة</h3>
-            <p>تشكيلة متنوعة من الأجبان عالية الجودة</p>
-          </div>
-          <div class="product-card featured">
-            <div class="product-image">
-              <img src="images/labneh.jpg" alt="اللبنة" />
-            </div>
-            <h3>اللبنة الطازجة</h3>
-            <p>لبنة كريمية بنكهات متعددة</p>
-          </div>
-          <div class="product-card featured">
-            <div class="product-image">
-              <img src="images/chocolate.jpg" alt="كريمة الشوكولاتة" />
-            </div>
-            <h3>كريمة الشوكولاتة</h3>
-            <p>كريمة غنية بنكهات مميزة</p>
+            <!-- <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1616631047096-8c5bc0ed0040?w=800&auto=format&fit=crop" alt="مصنع روابي بلادنا" class="img-fluid rounded-3 shadow">
+            </div> -->
           </div>
         </div>
       </section>
 
-      <section class="quality-commitment">
-        <div class="commitment-content">
-          <h2>التزامنا بالجودة</h2>
-          <p>
-            نلتزم بتطبيق أعلى معايير الجودة في جميع مراحل الإنتاج، من اختيار
-            المواد الخام وحتى المنتج النهائي.
-          </p>
-          <a href="quality.html" class="learn-more">اكتشف المزيد</a>
+      <section class="why-choose-us py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-5 mb-3">ليه تختارنا؟</h2>
+            <p class="lead">نقدم لكم أفضل المنتجات بأعلى معايير الجودة</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                  <div class="feature-icon display-4 mb-3">🌟</div>
+                  <h3 class="h4 mb-3">جودة لا مثيل لها</h3>
+                  <p class="text-muted">
+                    نلتزم بأعلى معايير الجودة في جميع مراحل الإنتاج
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                  <div class="feature-icon display-4 mb-3">💯</div>
+                  <h3 class="h4 mb-3">منتجات طبيعية 100%</h3>
+                  <p class="text-muted">
+                    نستخدم مكونات طبيعية خالية من المواد الحافظة
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                  <div class="feature-icon display-4 mb-3">🚚</div>
+                  <h3 class="h4 mb-3">توصيل سريع</h3>
+                  <p class="text-muted">
+                    نضمن وصول منتجاتنا طازجة إلى جميع عملائنا
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">مميزاتنا</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="feature-icon display-4 mb-3">🌿</div>
+                  <h3 class="h4 mb-3">منتجات طبيعية</h3>
+                  <p class="text-muted">
+                    نستخدم أجود المكونات الطبيعية في جميع منتجاتنا
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="feature-icon display-4 mb-3">🏭</div>
+                  <h3 class="h4 mb-3">تصنيع حديث</h3>
+                  <p class="text-muted">
+                    نستخدم أحدث التقنيات في التصنيع والتعبئة
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                  <div class="feature-icon display-4 mb-3">🚛</div>
+                  <h3 class="h4 mb-3">توزيع شامل</h3>
+                  <p class="text-muted">شبكة توزيع تغطي جميع مناطق المملكة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-preview py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">منتجاتنا المميزة</h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1634487359989-3e90c9432133?w=800&auto=format&fit=crop"
+                  class="card-img-top"
+                  alt="الأجبان البيضاء"
+                  style="height: 300px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h3 class="h4">الأجبان الطازجة</h3>
+                  <p class="text-muted">
+                    تشكيلة متنوعة من الأجبان البيضاء عالية الجودة
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <img
+                  src="https://th.bing.com/th/id/OIP.FBhTp_Wfu2LLHlYWk0HepAHaEL?rs=1&pid=ImgDetMain"
+                  class="card-img-top"
+                  alt="اللبنة"
+                  style="height: 300px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h3 class="h4">اللبنة الطازجة</h3>
+                  <p class="text-muted">
+                    لبنة كريمية طازجة بنكهة تقليدية أصيلة
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>روابي بلادنا</h2>
-          <p>نكهة الطبيعة في كل منتجاتنا</p>
-        </div>
-        <div class="footer-links">
-          <h3>روابط سريعة</h3>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="contact.html">اتصل بنا</a>
-        </div>
-        <div class="footer-contact">
-          <h3>تواصل معنا</h3>
-          <p>هاتف: 0096656518XXXX</p>
-          <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+    <footer class="footer bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h4">روابي بلادنا</h2>
+            <p>نكهة الطبيعة في كل منتجاتنا</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="h5">تواصل معنا</h3>
+            <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+            <p>الهاتف: +966 123456789</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="h5">تابعنا</h3>
+            <div class="social-links">
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-    <script>
-      document.getElementById('navToggle').addEventListener('click', function() {
-        this.classList.toggle('active');
-        document.getElementById('navLinks').classList.toggle('active');
-      });
 
-      // Close menu when clicking outside
-      document.addEventListener('click', function(e) {
-        const navToggle = document.getElementById('navToggle');
-        const navLinks = document.getElementById('navLinks');
-        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
-          navToggle.classList.remove('active');
-          navLinks.classList.remove('active');
-        }
-      });
-    </script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

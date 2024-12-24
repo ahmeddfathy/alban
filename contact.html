@@ -4,141 +4,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>اتصل بنا - روابي بلادنا</title>
-<!-- في contact.html -->
-<link rel="stylesheet" href="styles/main.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <h1>روابي بلادنا</h1>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">الرئيسية</a>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="distribution.html">خطة التوزيع</a>
-          <a href="quality.html">الجودة والاستدامة</a>
-          <a href="target-groups.html">الفئات المستهدفة</a>
-          <a href="contact.html" class="active">اتصل بنا</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">روابي بلادنا</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن المصنع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="distribution.html">خطة التوزيع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quality.html">الجودة والاستدامة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="target-groups.html"
+                  >الفئات المستهدفة</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="contact-hero">
-        <div class="contact-hero-content">
-          <h1>تواصل معنا</h1>
-          <p>نحن هنا للإجابة على استفساراتكم ومقترحاتكم</p>
+        <div class="container">
+          <div class="contact-hero-content text-center">
+            <h1 class="mb-4">تواصل معنا</h1>
+            <p class="mb-5">نحن هنا للإجابة على استفساراتكم ومقترحاتكم</p>
+          </div>
         </div>
       </section>
 
-      <section class="contact-info">
+      <section class="contact-info py-5">
         <div class="container">
-          <div class="contact-details">
-            <div class="contact-card">
-              <div class="contact-icon">📍</div>
-              <h3>العنوان</h3>
-              <p>المنطقة الصناعية الثانية</p>
-              <p>الرياض، المملكة العربية السعودية</p>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>العنوان</h3>
+                <p>المنطقة الصناعية الثانية</p>
+                <p>الرياض، المملكة العربية السعودية</p>
+              </div>
             </div>
-            <div class="contact-card">
-              <div class="contact-icon">📞</div>
-              <h3>الهاتف</h3>
-              <p>0096656518XXXX</p>
-              <p>0096656519XXXX</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>الهاتف</h3>
+                <p>0096656518XXXX</p>
+                <p>0096656519XXXX</p>
+              </div>
             </div>
-            <div class="contact-card">
-              <div class="contact-icon">✉️</div>
-              <h3>البريد الإلكتروني</h3>
-              <p>info@rawabi-bladna.com</p>
-              <p>support@rawabi-bladna.com</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>البريد الإلكتروني</h3>
+                <p>info@rawabi-bladna.com</p>
+                <p>support@rawabi-bladna.com</p>
+              </div>
             </div>
-            <div class="contact-card">
-              <div class="contact-icon">⏰</div>
-              <h3>ساعات العمل</h3>
-              <p>الأحد - الخميس: 8 صباحاً - 5 مساءً</p>
-              <p>الجمعة - السبت: مغلق</p>
-            </div>
-          </div>
-
-          <div class="contact-form-wrapper" >
-            <div class="contact-form-container">
-              <h2 class="form-title">أرسل لنا رسالة</h2>
-              <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                  <label for="name">الاسم الكامل</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="أدخل اسمك الكامل"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">البريد الإلكتروني</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="أدخل بريدك الإلكتروني"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="phone">رقم الجوال</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="05xxxxxxxx"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="subject">الموضوع</label>
-                  <select id="subject" name="subject" required>
-                    <option value="" disabled selected>اختر الموضوع</option>
-                    <option value="inquiry">استفسار عام</option>
-                    <option value="order">طلب منتجات</option>
-                    <option value="complaint">شكوى</option>
-                    <option value="suggestion">اقتراح</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="message">الرسالة</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="اكتب رسالتك هنا..."
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="submit-btn">
-                  <span>إرسال الرسالة</span>
-                  <div class="btn-icon">➤</div>
-                </button>
-              </form>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">⏰</div>
+                <h3>ساعات العمل</h3>
+                <p>الأحد - الخميس: 8 صباحاً - 5 مساءً</p>
+                <p>الجمعة - السبت: مغلق</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="map-section" style="margin-bottom: 2rem;">
+      <section class="contact-form-section py-5 bg-light">
         <div class="container">
-          <h2 class="section-title">موقعنا</h2>
+          <h2 class="section-title text-center mb-5">أرسل لنا رسالة</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="contact-form">
+                <form action="#" method="POST">
+                  <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    إرسال الرسالة
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">موقعنا</h2>
           <div class="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.674754711086!2d46.6985!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDEnNTQuNiJF!5e0!3m2!1sen!2ssa!4v1234567890!5m2!1sen!2ssa"
               width="100%"
               height="450"
-              style="border: 0"
+              style="border: 0; border-radius: 10px"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
@@ -148,23 +182,37 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>روابي بلادنا</h2>
-          <p>نكهة الطبيعة في كل منتجاتنا</p>
-        </div>
-        <div class="footer-links">
-          <h3>روابط سريعة</h3>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="contact.html">اتصل بنا</a>
-        </div>
-        <div class="footer-contact">
-          <h3>تواصل معنا</h3>
-          <p>هاتف: 0096656518XXXX</p>
-          <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-brand">
+              <h2>روابي بلادنا</h2>
+              <p>نكهة الطبيعة في كل منتجاتنا</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-links">
+              <h3>روابط سريعة</h3>
+              <ul class="list-unstyled">
+                <li><a href="about.html">عن المصنع</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-contact">
+              <h3>تواصل معنا</h3>
+              <p>هاتف: 0096656518XXXX</p>
+              <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

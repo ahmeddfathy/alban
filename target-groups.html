@@ -4,151 +4,196 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الفئات المستهدفة - روابي بلادنا</title>
-    
-
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/target-groups.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <h1>روابي بلادنا</h1>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">الرئيسية</a>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="distribution.html">خطة التوزيع</a>
-          <a href="quality.html">الجودة والاستدامة</a>
-          <a href="target-groups.html" class="active">الفئات المستهدفة</a>
-          <a href="contact.html">اتصل بنا</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">روابي بلادنا</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن المصنع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">المنتجات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="distribution.html">خطة التوزيع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quality.html">الجودة والاستدامة</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="target-groups.html"
+                  >الفئات المستهدفة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="target-hero">
-        <div class="target-hero-content">
-          <h1>الفئات المستهدفة</h1>
-          <p style="margin-bottom: 70px;">نصل إلى جميع شرائح المجتمع بمنتجات تناسب احتياجاتهم</p>
-        </div>
-        <div class="target-stats">
-          <div class="target-stat-card">
-            <div class="stat-icon">👥</div>
-            <div class="stat-number">5+</div>
-            <div class="stat-label">فئات مستهدفة</div>
-          </div>
-      
-          <div class="target-stat-card">
-            <div class="stat-icon">🎯</div>
-            <div class="stat-number">100%</div>
-            <div class="stat-label">تغطية السوق</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="target-groups">
         <div class="container">
-          <h2 class="section-title">فئاتنا المستهدفة</h2>
-          <div class="groups-grid">
-            <div class="group-card">
-              <div class="group-icon">🏠</div>
-              <h3>الأسر</h3>
-              <p>منتجات متنوعة تناسب جميع أفراد العائلة</p>
-              <ul class="group-features">
-                <li>منتجات بأحجام عائلية</li>
-                <li>تغليف آمن وسهل الاستخدام</li>
-                <li>أسعار تنافسية</li>
-              </ul>
+          <div class="target-hero-content text-center">
+            <h1 class="mb-4">الفئات المستهدفة</h1>
+            <p class="mb-5">
+              نصل إلى جميع شرائح المجتمع بمنتجات تناسب احتياجاتهم
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="target-stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-number">5+</div>
+                <div class="stat-label">فئات مستهدفة</div>
+              </div>
             </div>
-
-            <div class="group-card">
-              <div class="group-icon">🏢</div>
-              <h3>المؤسسات</h3>
-              <p>حلول متكاملة للمطاعم والفنادق</p>
-              <ul class="group-features">
-                <li>عبوات بأحجام كبيرة</li>
-                <li>خدمة توصيل منتظمة</li>
-                <li>دعم فني متخصص</li>
-              </ul>
-            </div>
-
-            <div class="group-card">
-              <div class="group-icon">🏫</div>
-              <h3>المدارس والجامعات</h3>
-              <p>منتجات صحية للمقاصف التعليمية</p>
-              <ul class="group-features">
-                <li>منتجات صحية للطلاب</li>
-                <li>عبوات مناسبة للمقاصف</li>
-                <li>برامج توعوية تغذوية</li>
-              </ul>
+            <div class="col-md-4">
+              <div class="target-stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">تغطية السوق</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="market-segments">
+      <section class="target-groups py-5">
         <div class="container">
-          <h2 class="section-title">شرائح السوق</h2>
-          <div class="segments-grid">
-            <div class="segment-card">
-              <div class="segment-header">
-                <h3>القطاع السكني</h3>
-                <div class="segment-percentage">45%</div>
+          <h2 class="section-title text-center mb-5">فئاتنا المستهدفة</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="group-card">
+                <div class="group-icon">🏠</div>
+                <h3>الأسر</h3>
+                <p>منتجات متنوعة تناسب جميع أفراد العائلة</p>
+                <ul class="group-features">
+                  <li>منتجات بأحجام عائلية</li>
+                  <li>تغليف آمن وسهل الاستخدام</li>
+                  <li>أسعار تنافسية</li>
+                </ul>
               </div>
-              <div class="segment-progress">
-                <div class="progress-bar" style="width: 45%"></div>
-              </div>
-              <p>الأسر والمنازل والتجمعات السكنية</p>
             </div>
-
-            <div class="segment-card">
-              <div class="segment-header">
-                <h3>القطاع التجاري</h3>
-                <div class="segment-percentage">30%</div>
+            <div class="col-md-4 mb-4">
+              <div class="group-card">
+                <div class="group-icon">🏢</div>
+                <h3>المؤسسات</h3>
+                <p>حلول متكاملة للمطاعم والفنادق</p>
+                <ul class="group-features">
+                  <li>عبوات بأحجام كبيرة</li>
+                  <li>خدمة توصيل منتظمة</li>
+                  <li>دعم فني متخصص</li>
+                </ul>
               </div>
-              <div class="segment-progress">
-                <div class="progress-bar" style="width: 30%"></div>
-              </div>
-              <p>المطاعم والفنادق ومحلات التجزئة</p>
             </div>
-
-            <div class="segment-card">
-              <div class="segment-header">
-                <h3>القطاع التعليمي</h3>
-                <div class="segment-percentage">25%</div>
+            <div class="col-md-4 mb-4">
+              <div class="group-card">
+                <div class="group-icon">🏫</div>
+                <h3>المدارس والجامعات</h3>
+                <p>منتجات صحية للمقاصف التعليمية</p>
+                <ul class="group-features">
+                  <li>منتجات صحية للطلاب</li>
+                  <li>عبوات مناسبة للمقاصف</li>
+                  <li>برامج توعوية تغذوية</li>
+                </ul>
               </div>
-              <div class="segment-progress">
-                <div class="progress-bar" style="width: 25%"></div>
-              </div>
-              <p>المدارس والجامعات والمعاهد</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="target-features" >
+      <section class="market-segments py-5 bg-light">
         <div class="container">
-          <h2 class="section-title">مميزات خدماتنا</h2>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">⚡</div>
-              <h3>توصيل سريع</h3>
-              <p>خدمة توصيل في نفس اليوم للطلبات العاجلة</p>
+          <h2 class="section-title text-center mb-5">شرائح السوق</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="segment-card">
+                <div class="segment-header">
+                  <h3>القطاع السكني</h3>
+                  <div class="segment-percentage">45%</div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 45%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p>الأسر والمنازل والتجمعات السكنية</p>
+              </div>
             </div>
-            <div class="feature-card">
-              <div class="feature-icon">💰</div>
-              <h3>أسعار تنافسية</h3>
-              <p>عروض وخصومات خاصة للعملاء المميزين</p>
+            <div class="col-md-4 mb-4">
+              <div class="segment-card">
+                <div class="segment-header">
+                  <h3>القطاع التجاري</h3>
+                  <div class="segment-percentage">30%</div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 30%"
+                    aria-valuenow="30"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p>المطاعم والفنادق ومحلات التجزئة</p>
+              </div>
             </div>
-            <div class="feature-card">
-              <div class="feature-icon">🤝</div>
-              <h3>دعم متواصل</h3>
-              <p>فريق دعم متخصص لخدمة العملاء</p>
+            <div class="col-md-4 mb-4">
+              <div class="segment-card">
+                <div class="segment-header">
+                  <h3>القطاع التعليمي</h3>
+                  <div class="segment-percentage">25%</div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 25%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p>المدارس والجامعات والمعاهد</p>
+              </div>
             </div>
           </div>
         </div>
@@ -156,23 +201,37 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>روابي بلادنا</h2>
-          <p>نكهة الطبيعة في كل منتجاتنا</p>
-        </div>
-        <div class="footer-links">
-          <h3>روابط سريعة</h3>
-          <a href="about.html">عن المصنع</a>
-          <a href="products.html">المنتجات</a>
-          <a href="contact.html">اتصل بنا</a>
-        </div>
-        <div class="footer-contact">
-          <h3>تواصل معنا</h3>
-          <p>هاتف: 0096656518XXXX</p>
-          <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-brand">
+              <h2>روابي بلادنا</h2>
+              <p>نكهة الطبيعة في كل منتجاتنا</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-links">
+              <h3>روابط سريعة</h3>
+              <ul class="list-unstyled">
+                <li><a href="about.html">عن المصنع</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-contact">
+              <h3>تواصل معنا</h3>
+              <p>هاتف: 0096656518XXXX</p>
+              <p>البريد الإلكتروني: info@rawabi-bladna.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
