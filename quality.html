@@ -7,6 +7,33 @@
 
     <link rel="stylesheet" href="styles/quality.css" />
     <link rel="stylesheet" href="styles/base.css" />
+    <style>
+      .vm-icon {
+        transition: all 0.3s ease;
+      }
+
+      .vm-card:hover .vm-icon i {
+        color: #000;
+      }
+
+      .vm-icon i {
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+      }
+
+      .sustainability-icon {
+        transition: all 0.3s ease;
+      }
+
+      .sustainability-card:hover .sustainability-icon i {
+        color: #000;
+      }
+
+      .sustainability-icon i {
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+      }
+    </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,6 +41,11 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
   <body>
@@ -49,9 +81,7 @@
                 <a class="nav-link" href="distribution.html">خطة التوزيع</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="quality.html"
-                  >الجودة والاستدامة</a
-                >
+                <a class="nav-link" href="quality.html">الجودة والاستدامة</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="target-groups.html"
@@ -109,7 +139,7 @@
             <div class="col-md-4">
               <div class="vm-card shadow-sm">
                 <div class="vm-icon bg-light">
-                  <i class="fas fa-bullseye"></i>
+                  <i class="bi bi-eye-fill display-4"></i>
                 </div>
                 <h2>رؤيتنا</h2>
                 <p>
@@ -121,7 +151,7 @@
             <div class="col-md-4">
               <div class="vm-card shadow-sm">
                 <div class="vm-icon bg-light">
-                  <i class="fas fa-paper-plane"></i>
+                  <i class="bi bi-bullseye display-4"></i>
                 </div>
                 <h2>رسالتنا</h2>
                 <p>
@@ -133,7 +163,7 @@
             <div class="col-md-4">
               <div class="vm-card shadow-sm">
                 <div class="vm-icon bg-light">
-                  <i class="fas fa-thumbs-up"></i>
+                  <i class="bi bi-stars display-4"></i>
                 </div>
                 <h2>قيمنا</h2>
                 <p>الجودة، الابتكار، الاستدامة، رضا العملاء</p>
@@ -258,7 +288,9 @@
           <div class="row">
             <div class="col-md-4">
               <div class="sustainability-card shadow-sm">
-                <div class="sustainability-icon bg-light">🌿</div>
+                <div class="sustainability-icon bg-light">
+                  <i class="bi bi-recycle display-4"></i>
+                </div>
                 <h3>عبوات صديقة للبيئة</h3>
                 <p>
                   استخدام مواد قابلة للتحلل في التغليف وتقليل النفايات
@@ -268,7 +300,9 @@
             </div>
             <div class="col-md-4">
               <div class="sustainability-card shadow-sm">
-                <div class="sustainability-icon bg-light">💧</div>
+                <div class="sustainability-icon bg-light">
+                  <i class="bi bi-droplet-fill display-4"></i>
+                </div>
                 <h3>ترشيد المياه</h3>
                 <p>
                   إعادة تدوير المياه في عمليات التصنيع وتطبيق أنظمة الري الذكي
@@ -277,7 +311,9 @@
             </div>
             <div class="col-md-4">
               <div class="sustainability-card shadow-sm">
-                <div class="sustainability-icon bg-light">⚡</div>
+                <div class="sustainability-icon bg-light">
+                  <i class="bi bi-lightning-charge-fill display-4"></i>
+                </div>
                 <h3>كفاءة الطاقة</h3>
                 <p>استخدام الطاقة النظيفة وتطبيق حلول توفير الطاقة في المصنع</p>
               </div>
